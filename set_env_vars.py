@@ -6,7 +6,7 @@ AWS_ACCESS_KEY_ID = "*************"
 AWS_SECRET_ACCESS_KEY = "*******************************"
 HUGGING_FACE_TOKEN="hf_***************"
 ANTHROPIC_API_KEY = "sk-************************"
-GEMINI_API_KEY = "AIzaSyB1eXxG4guj34H13HxEWV_czvcydyKXQmY"
+GEMINI_API_KEY = "AI************************"
 
 
 # Set environment variables
