@@ -76,7 +76,7 @@ def initialize_model_and_tokenizer(
     )
 
     # Initialize vLLM model
-    model = LLM(model_name=model_name, dtype=model_tensor_types[model_name])
+    model = LLM(model=model_name, dtype=model_tensor_types[model_name])
     return (tokenizer, model)
 
 def test_model(tokenizer: PreTrainedTokenizer | PreTrainedTokenizerFast, model: Any):
