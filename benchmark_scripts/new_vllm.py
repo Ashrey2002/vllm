@@ -161,7 +161,7 @@ def run_inferences() -> None:
             model=model_name,
             tensor_parallel_size=torch.cuda.device_count(),
             download_dir=SelfHosted.MODEL_WEIGHTS_DIRECTORY,
-            MAX_PARALLEL_LOADING_WORKERS=4,
+            enforce_eager=True,
         )
         
         sampling_params = SamplingParams(max_tokens=Defaults.MAX_TOKENS_TO_GENERATE)
