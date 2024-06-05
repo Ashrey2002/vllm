@@ -14,4 +14,3 @@ sentencepiece
 tiktoken
 google-api-python-client
 vllm
-ray
