@@ -161,6 +161,8 @@ def run_inferences() -> None:
             model=model_name,
             tensor_parallel_size=4,
             download_dir=SelfHosted.MODEL_WEIGHTS_DIRECTORY,
+            gpu_memory_utilization=0.8,
+            enforce_eager=True,
         )
         
         sampling_params = SamplingParams(max_tokens=Defaults.MAX_TOKENS_TO_GENERATE)
