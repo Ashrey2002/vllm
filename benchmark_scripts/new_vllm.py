@@ -159,9 +159,8 @@ def run_inferences() -> None:
         model_name = supported_models[model_name_from_args]
         llm = LLM(
             model=model_name,
-            tensor_parallel_size=torch.cuda.device_count(),
+            tensor_parallel_size=4,
             download_dir=SelfHosted.MODEL_WEIGHTS_DIRECTORY,
-            enforce_eager=True,
         )
         
         sampling_params = SamplingParams(max_tokens=Defaults.MAX_TOKENS_TO_GENERATE)
